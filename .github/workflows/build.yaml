@@ -24,6 +24,9 @@ jobs:
         pipenv --python ${{ matrix.python-version }}
         pipenv install pytest
         pipenv install
-    - name: Run tests
+    - name: Turn on 'editable' mode
       run: |
-        pytest
+        pipenv install -e .
+    - name: Test with pytest
+      run: |
+        pipenv run python -m pytest
