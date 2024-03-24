@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import patch
 
 with patch('builtins.input', return_value='exit'):
-    from src import fun
+    from just4fun import fun
 
 # For 8 Ball Functions
     
