@@ -25,3 +25,7 @@ while True:
         break
     question_count += 1
     print(magic_8_ball(question_count))
+
+
+
+## def make_me_laugh():
