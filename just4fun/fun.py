@@ -10,7 +10,7 @@ def magic_8_ball(question_count):
         "The answer lies within yourself.", "Only time will tell.", "The answer is hidden in plain sight."
     ]
     
-    if question_count == 5: 
+    if question_count > 5: 
         return "Phew, I'm tired. Let's take a break!"
     
     if len(question) > 100:
