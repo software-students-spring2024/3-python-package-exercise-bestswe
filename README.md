@@ -4,6 +4,13 @@
 
 An exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
 
+# Team Members
+
+[Edison Chen](https://github.com/ebc5802)
+[Natalie Wu](https://github.com/nawubyte)
+[Chelsea Li](https://github.com/qiaoxixi1)
+[Jacklyn Hu](https://github.com/Jacklyn22https://github.com/Jacklyn22)
+
 # Usage
 
 TBD
