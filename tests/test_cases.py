@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import patch
 
 with patch('builtins.input', return_value='exit'):
-    from src import fun
+    from src.just4fun import fun
     
 def test_response_for_valid_input():
     # Magic_8_ball returns a known response for valid inputs.
