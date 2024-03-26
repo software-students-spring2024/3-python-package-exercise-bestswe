@@ -1,5 +1,7 @@
 import pytest
 from unittest.mock import patch
+from src.just4fun import fun  # Update the import path according to your project structure
+
 
 with patch('builtins.input', return_value='exit'):
     from src.just4fun import fun
@@ -24,4 +26,28 @@ def test_tired_response():
     # The function returns the "tired" response at 5 questions
     response = fun.magic_8_ball(5) 
     expected_response = "Phew, I'm tired. Let's take a break!"
+    assert response == expected_response, f"Expected '{expected_response}', but got '{response}'."
+
+# Tests for Affirmations Function
+def test_affirmation_for_happy_mood():
+    happy_responses = [
+        "Your joy is contagious.",
+        "Happiness looks gorgeous on you.",
+        "Continue to shine as you always do."
+    ]
+    response = fun.affirmations("happy")
+    assert response in happy_responses, f"Response '{response}' was not in the list of happy affirmations."
+
+def test_affirmation_for_sad_mood():
+    sad_responses = [
+        "It's okay to feel sad, growth comes from discomfort.",
+        "This is temporary; your strength is permanent.",
+        "You are more resilient than you realize."
+    ]
+    response = fun.affirmations("sad")
+    assert response in sad_responses, f"Response '{response}' was not in the list of sad affirmations."
+
+def test_affirmation_for_unrecognized_mood():
+    response = fun.affirmations("angry")  # Example of an unrecognized mood
+    expected_response = "Mood not recognized. Please enter 'happy' or 'sad'."
     assert response == expected_response, f"Expected '{expected_response}', but got '{response}'."
