@@ -1,6 +1,6 @@
 import random
 
-def magic_8_ball(question_count):
+def magic_8_ball(question, question_count):
     responses = [
         "It is certain.", "As I see it, yes.", "Reply hazy, try again.", "Don't count on it.",
         "It is decidedly so.", "Most likely.", "Ask again later.", "My reply is no.",
@@ -24,4 +24,4 @@ while True:
     if question == 'exit':
         break
     question_count += 1
-    print(magic_8_ball(question_count))
+    print(magic_8_ball(question, question_count))
