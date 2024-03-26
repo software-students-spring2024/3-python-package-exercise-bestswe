@@ -14,7 +14,7 @@ def test_response_for_valid_input():
         "Yes – in due time.", "Yes, but don't hold your breath.", "You will have to wait.", "I have my doubts.", "The signs suggest no.",
         "The answer lies within yourself.", "Only time will tell.", "The answer is hidden in plain sight."
     ]
-<<<<<<< Updated upstream
+
     for count in range(1, 6):  # Testing for the first five questions
         response = fun.magic_8_ball(count)
         assert response in valid_responses, f"Response '{response}' was not in the list of known responses."
@@ -22,7 +22,6 @@ def test_response_for_valid_input():
 def test_tired_response():
     # The function returns the "tired" response after 5 questions
     response = fun.magic_8_ball(6) 
-=======
     question = "How's it going?"
     for count in range(1, 5):  # Testing for the first four questions
         response = fun.magic_8_ball(question, count)
@@ -32,7 +31,6 @@ def test_tired_response():
     # The function returns the "tired" response at 5 questions
     question = "How's it going?"
     response = fun.magic_8_ball(question, 5) 
->>>>>>> Stashed changes
     expected_response = "Phew, I'm tired. Let's take a break!"
     assert response == expected_response, f"Expected '{expected_response}', but got '{response}'."
     
@@ -45,7 +43,7 @@ def test_long_question_response():
     assert response == expected_response, f"Expected '{expected_response}', but got '{response}'."
     
 def test_sixth_question_valid_response():
-    # Assuming the function continues to provide valid responses after the 5th question
+    # The function returns of the 6th response.
     valid_responses = [
         "It is certain.", "As I see it, yes.", "Reply hazy, try again.", "Don't count on it.",
         "It is decidedly so.", "Most likely.", "Ask again later.", "My reply is no.",
