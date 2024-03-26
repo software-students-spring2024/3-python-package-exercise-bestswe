@@ -50,3 +50,26 @@ def test_sixth_question_valid_response():
     question = "How's it going?"
     response = fun.magic_8_ball(question, 6)  # The 6th question
     assert response in valid_responses, f"Response '{response}' was not in the list of known responses."
+
+def test_affirmation_for_happy_mood():
+    happy_responses = [
+        "Your joy is contagious.",
+        "Happiness looks gorgeous on you.",
+        "Continue to shine as you always do."
+    ]
+    response = fun.affirmations("happy")
+    assert response in happy_responses, f"Response '{response}' was not in the list of happy affirmations."
+
+def test_affirmation_for_sad_mood():
+    sad_responses = [
+        "It's okay to feel sad, growth comes from discomfort.",
+        "This is temporary; your strength is permanent.",
+        "You are more resilient than you realize."
+    ]
+    response = fun.affirmations("sad")
+    assert response in sad_responses, f"Response '{response}' was not in the list of sad affirmations."
+
+def test_affirmation_for_unrecognized_mood():
+    response = fun.affirmations("angry")  # Example of an unrecognized mood
+    expected_response = "Mood not recognized. Please enter 'happy' or 'sad'."
+    assert response == expected_response, f"Expected '{expected_response}', but got '{response}'."
