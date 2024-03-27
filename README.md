@@ -4,7 +4,7 @@
 
 Welcome to just4Fun - a lighthearted Python package designed to bring a little joy and levity to developers' lives. This package includes four fun, interactive functions.
 
-[PyPi Package](https://pypi.org/project/just4fun/0.1.0/)
+[PyPi Package](https://pypi.org/project/just4fun/0.1.1/)
 
 This was an exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
 
