@@ -123,3 +123,25 @@ def copypasta(type):
 #         break
 #     print(copypasta('text'))
 #     print(copypasta('image'))
+    
+def make_me_laugh(choice):
+     fun_facts = [
+        "Octopuses have three hearts.",
+        "Butterflies can taste with their feet.",
+        "The inventor of the frisbee was turned into a frisbee after he died.",
+        "Honey never spoils."
+    ]
+     jokes = [
+        "Why don't scientists trust atoms? Because they make up everything.",
+        "What do you call fake spaghetti? An impasta.",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+        "What's orange and sounds like a parrot? A carrot."
+    ]
+     
+     if choice.lower() == 'fun fact':
+        return random.choice(fun_facts)
+     elif choice.lower() == 'joke':
+        return random.choice(jokes)
+     else:
+        return "Please choose either 'fun fact' or 'joke'."
+
