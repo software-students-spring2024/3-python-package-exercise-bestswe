@@ -1,4 +1,4 @@
-from fun import magic_8_ball, affirmations, copypasta
+from fun import magic_8_ball, affirmations, copypasta, make_me_laugh
 
 def main():
     print("Welcome to the 4fun package demonstration!")
@@ -9,7 +9,8 @@ def main():
         print("1. Ask the magic 8 ball a question")
         print("2. Get affirmations based on your mood")
         print("3. Get a text or image copypasta")
-        print("4. Exit")
+        print("4. Make me laugh!" )
+        print("5. Exit")
         
         choice = input("Enter your choice: ")
 
@@ -23,11 +24,14 @@ def main():
         elif choice == '3':
             output_type = input("Do you want a text or image copypasta? (type \"text\" or \"image\"): ")
             print("\n" + copypasta(output_type))
-        elif choice == '4':
+        elif choice == '4': 
+            joke = input("Do you want a fun fact or a joke?")
+            print("\n" + make_me_laugh(joke))
+        elif choice == '5':
             print("\nGoodbye!\n")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 4.")
+            print("Invalid choice. Please enter a number between 1 and 5.")
 
 
 if __name__ == "__main__":
