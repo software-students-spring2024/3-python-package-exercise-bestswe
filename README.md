@@ -28,21 +28,21 @@ pytest
 
 ### 8 Ball Predictions
 
-- Input = question for the 8 ball
+Input = question for the 8 ball
 
 Variations:
 
-If the input is too long, reject the question, the 8 ball doesn't want to think about it.
+- If the input is too long, reject the question, the 8 ball doesn't want to think about it.
 
-If too many questions are asked, the 8 ball needs a break.
+- If too many questions are asked, the 8 ball needs a break.
 
-### Affirmations based on mood
+### Mood-Based Affirmations
 
 Input = mood (i.e. happy or sad)
 
 Variations:
 
-Will give you a compliment / affirmation based on your mood
+- Will give you a compliment / affirmation based on your mood.
 
 ### Make Me Laugh
 
@@ -50,7 +50,7 @@ Input = output type (fun fact or joke)
 
 Variations:
 
-Gives you a fun fact or a joke
+- Gives you a fun fact or a joke
 
 ### Copypasta
 
@@ -58,5 +58,5 @@ Input = ouptut type (text or image)
 
 Variations:
 
-Text copypasta, image copypasta (image made up of characters / emojis in terminal)
+- Text copypasta, image copypasta (image made up of characters / emojis in terminal)
 
