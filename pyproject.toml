@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "just4fun"
 description = "A fun package with 4 interactive functions for your entertainment."
-version = "0.1.1"
+version = "0.1.0"
 authors = [
   { name="Edison Chen", email="edison.chen@stern.nyu.edu" },
   { name="Natalie Wu", email="nw2132@nyu.edu" },
@@ -30,7 +30,7 @@ dev = ["pytest"]
 "Homepage" = "https://github.com/software-students-spring2024/3-python-package-exercise-bestswe/tree/main"
 
 [project.scripts]
-just4fun = "just4fun.fun:magic_8_ball"
-just4fun = "just4fun.fun:affirmations"
-just4fun = "just4fun.fun:make_me_laugh"
-just4fun = "just4fun.fun:copypasta"
+magic_8_ball= "just4fun.fun:magic_8_ball"
+affirmations = "just4fun.fun:affirmations"
+make_me_laugh = "just4fun.fun:make_me_laugh"
+copypasta = "just4fun.fun:copypasta"
