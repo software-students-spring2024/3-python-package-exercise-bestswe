@@ -18,14 +18,6 @@ def magic_8_ball(question, question_count):
     
     return random.choice(responses)
 
-# question_count = 0
-# while True:
-#     question = input("Ask the Magic 8 Ball a question (or type 'exit' to stop): ")
-#     if question == 'exit':
-#         break
-#     question_count += 1
-#     print(magic_8_ball(question, question_count))
-
 def affirmations(mood):
     affirmation_dict = {
         "happy": [
@@ -116,13 +108,6 @@ def copypasta(type):
         return random.choice(image_responses)
     else:
         return "Invalid Type."
-
-# while True:
-#     question = input("Get Copypasta (or type 'exit' to stop): ")
-#     if question == 'exit':
-#         break
-#     print(copypasta('text'))
-#     print(copypasta('image'))
     
 def make_me_laugh(choice):
      fun_facts = [
