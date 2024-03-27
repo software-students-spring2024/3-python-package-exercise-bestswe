@@ -174,7 +174,7 @@ def test_joke():
     assert response in valid_jokes, f"Response '{response}' was not in the list of valid jokes."
 
 def test_invalid_choice_laugh():
-        invalid_response = ["Invalid Type."]
+        invalid_response = ["Please choose either 'fun fact' or 'joke'."]
         response = fun.make_me_laugh("quack")
         assert response in invalid_response, f"Response '{response}' was not a valid response to an invalid input."
 
