@@ -44,3 +44,20 @@ def affirmations(mood):
         return random.choice(affirmation_dict[mood])
     else:
         return "Mood not recognized. Please enter 'happy' or 'sad'."    
+
+def copypasta(type):
+    text_responses = [
+        "Sample Text",
+        
+    ]
+    image_responses = [
+        "Sample Text",
+        
+    ]
+    
+    if type == 'text': 
+        return random.choice(text_responses)
+    elif type == 'image': 
+        return random.choice(image_responses)
+    else:
+        return "Invalid Type."
