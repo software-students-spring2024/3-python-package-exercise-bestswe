@@ -117,9 +117,9 @@ def copypasta(type):
     else:
         return "Invalid Type."
 
-while True:
-    question = input("Get Copypasta (or type 'exit' to stop): ")
-    if question == 'exit':
-        break
-    print(copypasta('text'))
-    print(copypasta('image'))
+# while True:
+#     question = input("Get Copypasta (or type 'exit' to stop): ")
+#     if question == 'exit':
+#         break
+#     print(copypasta('text'))
+#     print(copypasta('image'))
